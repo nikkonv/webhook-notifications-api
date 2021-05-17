@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
 
 app.post('/notifications', (req, res) => {
   console.log(req.body)
+  if (req.body['event-data'].message)
+    console.log('message headers', req.body['event-data'].message.headers)
   res.status(200).end()
 })
 
