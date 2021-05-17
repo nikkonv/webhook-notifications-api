@@ -13,6 +13,6 @@ app.post('/notifications', (req, res) => {
   res.status(200).end()
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
