@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "semi": false
   }
 }
