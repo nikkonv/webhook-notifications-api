@@ -5,7 +5,8 @@ const port = 3000
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  res.send('This will receive webhooks')
+  const now = new Date()
+  res.send('This will receive webhooks', now)
 })
 
 app.post('/notifications', (req, res) => {
