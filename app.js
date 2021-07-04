@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
   const now = new Date()
-  res.send('This will receive webhooks', now)
+  res.status(200).json({ message: 'This will receive webhooks', date: now })
 })
 
 app.post('/notifications', (req, res) => {
